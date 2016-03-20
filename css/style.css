@@ -31,7 +31,7 @@ body {
 -----------------------------------------------------------------------------*/
 #wrapper{
 	margin:auto;
-	height:2000px;
+	height:3000px;
 	width:900px;
 	background-color:white;
 	margin-top:100px;
@@ -162,10 +162,11 @@ nav a{
 #iphone
 {
 	width:398px;
-	height:546px;
+	height:545px;
 	
 	float:left;
 	background-image: url(../img/iphone.jpg); 
+	 z-index: 1;
 }
 #iphone-text
 {
@@ -199,6 +200,90 @@ nav a{
 	height:50px;
 	margin-top:40px;
 	
+}
+
+/* center-three
+-----------------------------------------------------------------------------*/
+#center-three
+{
+	width:100%;
+	height:270px;
+	background-color:#4a3949;
+	margin-top:-0.001cm;
+	
+}
+
+	.slider {
+			z-index: 9;
+			width: 900px;
+			height: 270px;
+			overflow: hidden;
+			margin: 0 0 7px;
+			position: relative;
+		}
+		.slider ul,
+		.slider li {
+			padding: 0;
+			margin: 0;
+			list-style-type: none;
+		}
+		.slider ul {
+			width: 9999px; 
+		}
+		.slider ul li {
+			list-style-type: none;
+			float: left;
+			width: 900px;
+			height: 290px;
+		}
+		.slider .nav {
+			position: absolute;
+			left: 410px;
+			bottom: 12px; 
+		}
+		.slider .nav span {
+			opacity: 0.9;
+			background: #fff;
+			margin: 0 8px 0 0;
+			width: 10px;
+			height: 10px;
+			border-radius: 10px;
+			cursor: pointer;
+			overflow: hidden;
+			display: block;
+			float: left;
+			box-shadow: 0 1px 2px #000;
+		}
+		.slider .nav span.on {
+			background: #2e9419;
+		}
+/* center-four
+-----------------------------------------------------------------------------*/
+#center-four
+{
+	width:100%;
+	height:690px;
+	border:1px solid green;
+}
+
+#food-title
+{
+	width:100%;
+	height:150px;
+	border:1px solid green;
+}
+
+#food
+{
+	width:100%;
+	height:390px;
+	border:1px solid red;
+}
+#statistics
+{
+	width:100%;
+	height:145px;
+	border:1px solid black;
 }
 /* Footer
 -----------------------------------------------------------------------------*/

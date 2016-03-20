@@ -5,6 +5,43 @@
    <meta charset="utf-8">
    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			$(".slider").each(function ()
+			{
+				var obj = $(this);
+				$(obj).append("<div class='nav'></div>");
+
+				$(obj).find("li").each(function ()
+				{
+					$(obj).find(".nav").append("<span rel='"+$(this).index()+"'></span>");
+					$(this).addClass("slider"+$(this).index());
+				});
+
+				$(obj).find("span").first().addClass("on");
+			});
+		});
+
+	function sliderJS (obj, sl) // slider function
+	{
+		var ul = $(sl).find("ul");
+		var bl = $(sl).find("li.slider"+obj);
+		var step = $(bl).width();
+		$(ul).animate({marginLeft: "-"+step*obj}, 500);
+	}
+
+	$(document).on("click", ".slider .nav span", function() // slider click navigate
+	{
+		var sl = $(this).closest(".slider");
+		$(sl).find("span").removeClass("on");
+		$(this).addClass("on");
+		var obj = $(this).attr("rel");
+		sliderJS(obj, sl);
+		return false;
+	});
+</script>
  </head>
  <body>
  
@@ -64,10 +101,37 @@
 					malesuada. Duis vehicula a nibh id hendrerit. Donec sit amet ultrices 
 					ante, a mattis massa.</p> </div>
 				<div id="iphonelinkapplandgoogle">
-					<a href="apple.com"><img src="img/applestore.ico"/></a>
-					<a href="play.google.com"><img src="img/googleplay.ico"/></a>
+					<a href="http://www.apple.com/"><img src="img/applestore.ico"/></a>
+					<a href="https://play.google.com/"><img src="img/googleplay.ico"/></a>
 				</div>
 			</div>
+		</div>
+		<div id="center-three">
+			<div class="slider">
+	<ul>
+		<li><img src="img/comment1.jpg" alt="">wewe</li>
+		<li><img src="img/comment2.jpg" alt=""></li>
+		<li><img src="img/comment3.jpg" alt=""></li>
+
+	</ul>
+	<script type="text/javascript"> var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-23131825-1']);
+		_gaq.push(['_trackPageview']); (function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})(); </script>
+
+		<script type="text/javascript">new Image().src = "http://counter.yadro.ru/hit?r"+
+			escape(document.referrer)+((typeof(screen)=="undefined")?"":
+				";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+				screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+";"+Math.random();</script>
+
+				<script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter20963398 = new Ya.Metrika({id:20963398, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/20963398" style="position:absolute; left:-9999px;" alt=""></div></noscript>
+</div>
+		</div>
+		<div id="center-four">
+			<div id="food-title"></div>
+			<div id="food"></div>
+			<div id="statistics"></div>
 		</div>
 	</div>
 	
