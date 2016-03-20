@@ -1,0 +1,90 @@
+
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	height: 100%;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+body {
+	font: 12px/18px Arial, sans-serif;
+	height: 100%;
+	
+	
+	background-image: url(../img/backgorund.jpg); /* Путь к фоновому изображению */
+    width:100%;
+	height:100%;
+	background-repeat: no-repeat;
+	min-width:1200px;
+	
+	background-attachment: fixed ;
+	background-position :top;
+	 background-size: cover; /* Масштабируем фон */
+	
+	
+}
+
+/* Wrapper
+-----------------------------------------------------------------------------*/
+#wrapper{
+	margin:auto;
+	height:2000px;
+	width:900px;
+	background-color:white;
+	margin-top:100px;
+	margin-bottom:100px;
+	  box-shadow: 0 0 20px rgba(0,0,0,3);
+}
+
+/* Header
+-----------------------------------------------------------------------------*/
+#header {
+	background-image: url(../img/header.jpg); 
+	background-repeat: no-repeat;
+	width:900px;
+	height:495px;
+	
+}
+
+#namesite{
+	margin:auto;
+	padding-top:300px;
+	text-align:center;
+	font-size:50px;
+	font-weight: 600;
+	color:white;  
+	
+}
+nav{
+	
+	text-align:center;
+}
+
+nav a{
+	color:white;
+	font-size:18px;
+	text-decoration:none;
+}
+
+
+/* Middle
+-----------------------------------------------------------------------------*/
+.content {
+	padding: 0 0 100px;
+}
+
+
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
+.footer {
+	margin: -100px auto 0;
+	min-width: 1000px;
+	height: 100px;
+	background: #BFF08E;
+	position: relative;
+}
