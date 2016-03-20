@@ -18,7 +18,7 @@ body {
     width:100%;
 	height:100%;
 	background-repeat: no-repeat;
-	min-width:1200px;
+	min-width:900px;
 	
 	background-attachment: fixed ;
 	background-position :top;
@@ -31,7 +31,7 @@ body {
 -----------------------------------------------------------------------------*/
 #wrapper{
 	margin:auto;
-	height:3000px;
+	height:3390px;
 	width:900px;
 	background-color:white;
 	margin-top:100px;
@@ -74,7 +74,7 @@ nav a{
 -----------------------------------------------------------------------------*/
 #center {
 	width:100%;
-	height:1000px;
+	height:2800px;
 	padding-top:70px;
 	
 	
@@ -238,12 +238,12 @@ nav a{
 		}
 		.slider .nav {
 			position: absolute;
-			left: 410px;
+			left: 425px;
 			bottom: 12px; 
 		}
 		.slider .nav span {
 			opacity: 0.9;
-			background: #fff;
+			background: #4a3949;
 			margin: 0 8px 0 0;
 			width: 10px;
 			height: 10px;
@@ -255,42 +255,177 @@ nav a{
 			box-shadow: 0 1px 2px #000;
 		}
 		.slider .nav span.on {
-			background: #2e9419;
+			background: white;
 		}
 /* center-four
 -----------------------------------------------------------------------------*/
 #center-four
 {
 	width:100%;
-	height:690px;
-	border:1px solid green;
+	height:750px;
+	
+	background-color:#f7f7f7;
 }
 
 #food-title
 {
 	width:100%;
 	height:150px;
-	border:1px solid green;
+	
+}
+
+
+#titlein
+{
+	text-align:center;
+	font-weight: 600;
+	padding-top:100px;
+	font-size:16px;
 }
 
 #food
 {
 	width:100%;
-	height:390px;
-	border:1px solid red;
+	height:450px;
+
+}
+
+.imgfood
+{
+	float:left;
+	background-color:black;
+	width:300px;
+	height:211px;
 }
 #statistics
 {
 	width:100%;
 	height:145px;
+	
+}
+
+.statistics
+{
+	width:178px;
+	height:145px;
+
+	float:left;
+}
+
+.numeric
+{
+	font-size:28px;
+	font-weight: 600;
+	text-align:center;
+	padding-top:30px;	
+}
+
+.statisticstext
+{
+	text-align:center;
+	padding:10px;
+}
+
+/* Footer
+-----------------------------------------------------------------------------*/
+#feedback
+{
+	width:100%;
+	height:420px;
+	
+}
+
+#feedbacktitle
+{
+	text-align:center;
+	font-weight: 600;
+	padding-top:100px;
+	font-size:16px;
+}
+
+
+input{
+	height:22px;
+	font-size:20px;
 	border:1px solid black;
+}
+.label
+{
+	
+	margin:10px;
+}
+.map
+{
+	margin-left:150px;
+}
+#map
+{
+	height:450px;
+	width:100%;
+	
+	background-color:white;
+}
+/* form
+-----------------------------------------------------------------------------*/
+#form
+{
+	margin-top:20px;
+	font-size:16px;
+}
+#formLeft
+{
+	width:449px;
+	height:200px;
+	
+	float:left;
+}
+#formRight
+{
+	width:440px;
+	height:200px;
+
+	float:left;
+}
+.nameform
+{
+	padding:10px;
+}
+textarea
+{
+	resize: none;
+	padding-bottom:10px;
+		border:1px solid black;
+}
+#submit
+{
+	font-size:18px;
+	margin-left:20px;
 }
 /* Footer
 -----------------------------------------------------------------------------*/
-.footer {
-	margin: -100px auto 0;
-	min-width: 1000px;
-	height: 100px;
-	background: #BFF08E;
-	position: relative;
+#footer {
+	height:80px;
+	width:100%;
+	clear:both;
+	background-color:black;
+	
+
+}
+
+#social
+{
+	width:100px;
+	height:60px;
+	margin:auto;
+	clear:both;
+}
+.footerimg
+{
+	float:left;
+	padding-top:12px;
+}
+#footertext
+{
+	text-align:center;
+	color:white;
 }
