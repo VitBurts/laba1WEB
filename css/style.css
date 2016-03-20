@@ -72,11 +72,88 @@ nav a{
 
 /* Middle
 -----------------------------------------------------------------------------*/
-.content {
-	padding: 0 0 100px;
+#center {
+	width:100%;
+	height:1000px;
+	padding-top:70px;
+	
+	
+	
+}
+/* center-one
+-----------------------------------------------------------------------------*/
+#center-one
+{
+	width:100%;
+	height:200px;
+
+
 }
 
+.icons
+{
+	width:297px;
+	height:200px;
+	
+	float:left;
+}
 
+#ico1-img
+{
+	width:107px;
+	height:107px;
+	margin:auto;
+	
+	background-image: url(../img/ico1.ico); 
+}
+
+#ico2-img
+{
+	width:107px;
+	height:107px;
+	margin:auto;
+	
+	background-image: url(../img/ico2.ico); 
+}
+
+#ico3-img
+{
+	width:107px;
+	height:107px;
+	margin:auto;
+	
+	background-image: url(../img/ico3.ico); 
+}
+
+.icons .ico-title
+{
+	text-align:center;
+	padding-top:10px;
+	font-size:16px;
+	font-weight: 600;
+	
+	
+}
+.ico-line
+{
+	width:80px;
+	margin:auto;
+	border-bottom:1px solid red;
+	padding-top:2px;
+}
+
+.ico-text
+{
+	padding:5px;
+	padding-top:10px;
+	text-align:center;
+}
+/* center-two
+-----------------------------------------------------------------------------*/
+#center-two
+{
+	
+}
 
 
 /* Footer
