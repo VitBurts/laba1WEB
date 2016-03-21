@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
+
  <head>
    <title>!DOCTYPE</title>
    <meta charset="utf-8">
    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
 	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/AnchorScroller.js"></script> 
 	<script type="text/javascript">
 		$(document).ready(function()
 		{
@@ -22,6 +24,24 @@
 
 				$(obj).find("span").first().addClass("on");
 			});
+			
+			var target = $('.imgfood');
+			var targetPos = target.offset().top;
+			var winHeight = $(window).height();
+			var scrollToElem = targetPos - winHeight;
+			$(window).scroll(function(){
+			  var winScrollTop = $(this).scrollTop();
+			  if(winScrollTop > scrollToElem){
+				//сработает когда пользователь доскроллит к элементу с классом .elem
+				$(".imgfood").addClass('animated bounceIn');
+				
+			  }
+			  else
+			  {
+			  $(".imgfood").removeClass('animated bounceIn');
+			
+			  }
+			})
 		});
 
 	function sliderJS (obj, sl) // slider function
@@ -47,9 +67,9 @@
  
  <div id="wrapper">
 	<div id="header">
-		<div id="namesite">RECIPES</div>
-		 <nav><a href="1.html">CUISINES</a> | <a href="2.html">Fudi APP</a> |
-       <a href="3.html">Comment</a> | <a href="4.html">Feedback</a></nav>
+		<div id="namesite" class="bounce">RECIPES</div>
+		 <nav><a  href="#CUISINES" onclick="return anchorScroller(this)">CUISINES</a> | <a  href="#FUDIAPP" onclick="return anchorScroller(this)">Fudi APP</a> |
+       <a href="#Comment" onclick="return anchorScroller(this)">Comment</a> | <a  href="#Feedback" onclick="return anchorScroller(this)">Feedback</a></nav>
 	</div>
 	<div id="center">
 		<div id="center-one">
@@ -83,6 +103,7 @@
 			</div>
 		</div>
 		<div id="center-two">
+		<a name="FUDIAPP"></a> 
 			<div id="iphone"></div>
 			<div id="iphone-text">
 				<div id="iphone-title">INTRODUCING THE FUDI APP</div>
@@ -107,6 +128,7 @@
 			</div>
 		</div>
 		<div id="center-three">
+		<a name="Comment"></a>
 			<div class="slider">
 	<ul>
 		<li><img src="img/comment1.jpg" alt="">wewe</li>
@@ -130,6 +152,7 @@
 		</div>
 		<div id="center-four">
 			<div id="food-title">
+			<a name="CUISINES"></a> 
 				<div id="titlein">BROWSE BY CUISINES</div>
 				<div class="ico-line"></div>
 			</div>
@@ -170,10 +193,11 @@
 			</div>
 		</div>
 		<div id="feedback">
-
+		
 		<div id="feedbacktitle">FEEDBACK</div>
 		<div class="ico-line"></div>
 		<form id="form">
+		<a name="Feedback"></a>
 			<div id="formLeft">	
 			
 			<div class="nameform" style="margin-top:20px;"><label class="label">Name</label>
